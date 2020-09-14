@@ -90,4 +90,26 @@ resource "aws_security_group" "linux_servers_sg" {
 
 }
 
+# SUBNET GROUP
+resource "aws_db_subnet_group" "mysql" {
+  name       = "mysql-subngroup"
+  subnet_ids = [aws_subnet.us_east_2a_subnet_1.id, aws_subnet.us-east-2b-private_subnet.id]
+
+  tags = {
+    Name = "mysql-subnetGroup"
+  }
+}
+
+# SUBNET 2 us-east-2b
+resource "aws_subnet" "us-east-2b-private_subnet" {
+
+  availability_zone =element(var.az_names, 1)
+  vpc_id            = aws_vpc.default_vpc.id
+  cidr_block        = var.private_subnet_cidr
+
+  tags = {
+    Name = "us-east-2b-private_subnet"
+  }
+}
+
 
