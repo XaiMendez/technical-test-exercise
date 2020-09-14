@@ -1,0 +1,10 @@
+=========
+terraform
+=========
+$ terraform init
+
+$ terraform plan -var-file="./tfvars.json"
+
+$ terraform apply -var-file="./tfvars.json"
+
+$ terraform destroy -var-file="./tfvars.json"
