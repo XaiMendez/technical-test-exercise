@@ -1,10 +1,16 @@
 
 {
     "aws_region": "us-east-2",
-    "iam_access_key":"",
-    "iam_secret_key":"",
+    "iam_access_key":"AKIAZY6THM5N6U4GXKUD",
+    "iam_secret_key":"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",
     "vpc_cidr": "10.0.0.0/16",
     "subnet_cidr_blocks": ["10.0.4.0/24"],
     "private_subnet_cidr": "10.0.5.0/24",
-    "az_names": ["us-east-2a","us-east-2b"]
+    "az_names": ["us-east-2a","us-east-2b"],
+    "instance_type": "a1.medium",
+    "key_name":"xmendez-key",
+    "ubuntu_ami":"ami-00ea3ade739217b29",
+    "database_name":"xmendez-key",
+    "database_username":"xmendez-key",
+    "database_password":"ami-00ea3ade739217b29"
 }
