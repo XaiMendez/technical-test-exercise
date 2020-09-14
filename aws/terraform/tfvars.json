@@ -2,5 +2,9 @@
 {
     "aws_region": "us-east-2",
     "iam_access_key":"",
-    "iam_secret_key":""
+    "iam_secret_key":"",
+    "vpc_cidr": "10.0.0.0/16",
+    "subnet_cidr_blocks": ["10.0.4.0/24"],
+    "private_subnet_cidr": "10.0.5.0/24",
+    "az_names": ["us-east-2a","us-east-2b"]
 }

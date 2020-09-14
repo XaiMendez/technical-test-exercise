@@ -9,3 +9,21 @@ variable "iam_access_key" {
 variable "iam_secret_key" {
   type = string
 }
+
+variable "az_names" {
+  type    = list(string)
+  default = [""]
+}
+
+variable "vpc_cidr" {
+  type = string
+}
+
+variable "subnet_cidr_blocks" {
+  type    = list(string)
+  default = [""]
+}
+
+variable "private_subnet_cidr" {
+  type = string
+}
